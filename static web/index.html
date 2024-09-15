@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity pathways</title>
+    <style>
+    
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .container {
+          max-width: 1000px;
+          margin: 50px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+      h1 {
+          text-align: center;
+      }
+      
+      
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="NA" width="100px" height="100px">
+        
+        Serenity Pathways
+      </div>
+    </header>
+    <nav style="background-color: cadetblue;">
+        <ul><h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="support-groups.html">Support Groups</a></li>
+            <li><a href="recovery-stories.html">Recovery Stories</a></li>
+            <li><a href="Interview.html">Interviews</a></li>
+            <li><a href="self-help.html">Self Help</a></li>
+            <li><a href="helpline.html">Helpline</a></li>
+            <li><a href="prevention-and-treatment.html">Prevention and Treatment</a></li>
+          </h3>
+        </ul>
+    </nav>
+    <a href="Register.html" class="rectangle" >Register</a>
+    <div class="popup" id="ageVerificationPopup">
+      <div class="popup-content">
+          <h2>Age Verification</h2>
+          <p>Are you above 18 years of age?</p>
+          <button onclick="closePopup(true)">Yes</button>
+          <button onclick="closePopup(false)">No</button>
+      </div>
+  </div>
+    <div>
+      <a href="chatbot.html">
+        <img src="chatbot.png" height="150px" width="150px" style="position: fixed;
+        right: 0px;
+        bottom: 0px;">
+        <p style="position: fixed;
+        right: 0px;
+        bottom: 0px;
+        padding-right: 50px;
+        size: 50;">
+          Ask Me!
+        </p>
+      </a>
+
+      
+    </div>
+    <div class="container" style="background-color: cadetblue;">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://www.eastmojo.com/wp-content/uploads/2021/06/maxresdefault-1.jpg" style="width:100%">
+        <div class="text">A approach to Stop Substance Abuse</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://spmscience.blog.onlinetuition.com.my/wp-content/uploads/sites/10/2017/08/Picture21-1.png" style="width:100%">
+        <div class="text" style="color: black;">Effects of Drugs</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://th.bing.com/th/id/OIP.UbX1vwixwiMFrB9kfraqFgHaH4?w=900&h=958&rs=1&pid=ImgDetMain" style="width:100%">
+        <div class="text" style="color: black;">Treatment Plans</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://www.theblackberrycenter.com/wp-content/uploads/2020/07/Drug-Addiction-Treatment.jpg" style="width:100%">
+        <div class="text" style="color: black;">Rehabs and Counselling</div>
+      </div>
+    </div>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    <!-- <marquee  behavior="" direction="left" > 
+      <img src="sc4.jpg"  alt="Support Groups Image" width="560px" height="360px">      
+      <img src="sc1.png" alt="Welcome Image" width="560px" height="360px">
+      <img src="sc2.png" alt="Support Image" width="560px" height="360px">
+      <img src="sc3.jpg"  alt="Support Groups Image" width="560px" height="360px"> 
+       
+</marquee> -->
+    <div class="container" align="center" style="background-color: cadetblue; width: 1000px;">
+        <h1>Welcome to Serenity Pathways</h1>
+        <p>Find hope, support, and guidance on your journey to recovery</p>
+        <div class="image-wrapper">
+          <img src="welcome_image.jpeg" alt="Welcome Image" width="560px" height="360px">
+        </div>
+        <p>At Serenity Pathways, we understand that overcoming drug abuse can be challenging, but you are not alone. Whether you're seeking support for yourself or a loved one, we're here to help you every step of the way.</p>
+        <p>Explore our resources, connect with others who understand, and take the first step towards a brighter, healthier future.</p>
+        <div class="image-wrapper">
+          <img src="support_image.jpeg" alt="Support Image" width="560px" height="360px">
+        </div>
+        <p>Together, we can walk the path to serenity.</p>
+      </div>
+      <div class="container">
+        <div class="adult">
+          <section id="what-is-drug-abuse">
+            <h2>What is Drug Abuse?</h2>
+            <p>Drug abuse is the habitual use of illegal drugs or the misuse of prescription or over-the-counter drugs for purposes other than those for which they are indicated or in a manner or in quantities other than directed.</p>
+        </section>
+        </div>
+      </div>
+      
+      <div class="container" align="center" style="background-image: linear-gradient(to bottom, rgb(70, 163, 163) , rgb(50, 127, 172));">
+        <h1 style="background-color: rgb(255, 255, 255);">Overview of Services</h1>
+        
+        
+        <div class="service-description">
+          <h2>Support Groups</h2>
+          <img src="support_groups.jpeg" alt="Support Groups Image" width="560px" height="300px">
+          <div>
+            
+            <p>Connect with others who understand your struggles and share experiences in a safe and supportive environment. Our support groups provide a sense of community and belonging, helping you feel less alone on your journey to recovery.</p>
+          </div>
+        </div>
+    
+        <div class="service-description">
+          <h3>Recovery Stories</h3>
+          <img src="recovery_stories.jpeg" alt="Recovery Stories Image" width="560px" height="300px">
+          <div>
+            
+            <p>Read inspiring stories of individuals who have successfully overcome drug abuse. These stories offer hope, motivation, and encouragement, showing that recovery is possible even in the face of challenges.</p>
+          </div>
+        </div>
+    
+        <div class="service-description">
+          <h3>Self-Help Resources</h3>
+          <img src="self_help_resources.jpeg" alt="Self-Help Resources Image" width="560px" height="300px">
+          <div>
+            
+            <p>Access practical tips, tools, and techniques to help you take control of your recovery process. Our self-help resources cover a range of topics, including coping strategies, stress management, and building resilience.</p>
+          </div>
+        </div>
+    
+        <div class="service-description">
+          <h3>Helpline</h3>
+          <img src="helpline.jpeg" alt="Helpline Image" width="560px" height="300px">
+          <div>
+            
+            <p>Reach out for immediate assistance and guidance through our helpline staffed by trained professionals. Whether you need someone to talk to, information about treatment options, or help in a crisis, our helpline is here for you 24/7.</p>
+          </div>
+        </div>
+    
+        <div class="service-description">
+          <h3>Prevention and Treatment</h3>
+          <img src="prevention_and_treatment.jpeg" alt="Prevention and Treatment Image" width="560px" height="300px">
+          <div>
+            
+            <p>Learn about effective prevention strategies and explore available treatment options tailored to your needs. Our prevention and treatment resources provide information, guidance, and support to help you make informed decisions about your recovery journey.</p>
+          </div>
+        </div>
+        
+        <p>Our goal is to provide comprehensive support and resources to empower you on your path to recovery.</p>
+      </div>
+      <footer>
+        <h1>Serenity Pathways</h1>
+        <div class="references">
+          <p>References:</p>
+          <a href="https://example.com">National Institute on Drug Abuse</a>
+          <a href="https://example.com">Substance Abuse and Mental Health Services Administration</a>
+        </div>
+        <div class="contact-info">
+          <p>Contact Us:</p>
+          <p>Email: info@serenitypathways.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+      </footer>
+      
+     
+    <script>
+        function closePopup(above18) {
+            var popup = document.getElementById("ageVerificationPopup");
+            popup.style.display = "none";
+            if (!above18) {
+                var adultContent = document.getElementsByClassName("adult");
+                for (var i = 0; i < adultContent.length; i++) {
+                    adultContent[i].style.display = "none";
+                }
+            }
+        }
+    
+        // Show the age verification popup when the page loads
+        window.onload = function() {
+            var popup = document.getElementById("ageVerificationPopup");
+            popup.style.display = "block";
+        };
+    </script>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>

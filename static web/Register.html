@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Pathways - Self Help</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Add padding to containers */
+        .container {
+          padding: 16px;
+          background-color: white;
+        }
+        
+        /* Full-width input fields */
+        input[type=text], input[type=Number], input[type=Password], input[type=email] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Overwrite default styles of hr */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for the submit button */
+        .registerbtn {
+          background-color: #5f9ea0;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+          opacity: 1;
+        }
+        
+        /* Add a blue text color to links */
+        a {
+          color: dodgerblue;
+        }
+        
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+          background-color: #f1f1f1;
+          text-align: center;
+        }
+    </style>
+        
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="Logo.jpeg" alt="NA" width="100px" height="100px">
+    
+    Serenity Pathways
+  </div>
+</header>
+    <nav style="background-color: #5f9ea0;">
+        <ul><h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="support-groups.html">Support Groups</a></li>
+            <li><a href="recovery-stories.html">Recovery Stories</a></li>
+            <li><a href="Interview.html">Interviews</a></li>
+            <li><a href="self-help.html">Self Help</a></li>
+            <li><a href="helpline.html">Helpline</a></li>
+            <li><a href="prevention-and-treatment.html">Prevention and Treatment</a></li>
+          </h3>
+        </ul>
+    </nav>
+    <a href="index.html" class="square" style="left: 0px;background-color: cadetblue;
+    padding: 20px 40px;
+    border-radius: 5px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    top: 0px;">Back To Home</a>
+    <form action="process_form.php">
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+          <label for="Age"><b>Age</b></label>
+          <input type="number" placeholder="Enter Age" name="Age" id="age" required>
+
+          <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br><br>
+
+          <label for="Relation"><b>Your Relation to the Victim</b></label>
+          <select id="relation" name="Relation" required>
+                <option value="I">Themself</option>
+                <option value="P">Parent</option>
+                <option value="S">Spouse</option>
+                <option value="Si">Sibling</option>
+                <option value="F">Friend</option>
+                <option value="Ch">Children</option>
+                <option value="C">Colleague</option>
+                <option value="R">Relative</option>
+                <option value="O">Other</option>
+            </select><br><br>
+
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" id="email" required>
+<!--       
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr> -->
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      
+          <button  type="submit" class="registerbtn">Register</button>
+            
+        
+        <!-- <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div> -->
+      </form>
+    <footer>
+        <h1>Serenity Pathways</h1>
+        <div class="references">
+          <p>References:</p>
+          <a href="https://example.com">National Institute on Drug Abuse</a>
+          <a href="https://example.com">Substance Abuse and Mental Health Services Administration</a>
+        </div>
+        <div class="contact-info">
+          <p>Contact Us:</p>
+          <p>Email: info@serenitypathways.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+      </footer>
+</body>
+</html>
